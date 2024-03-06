@@ -34,6 +34,15 @@ section:nth-child(even) {
   background: #eee;
 }
 
+/* .login-form {
+  width: 25%;
+  padding: 2rem 9%;
+  margin: 0 auto;
+  height: auto;
+  background-color: #ebffd095;
+  text-align: left;
+} */
+
 .sub-heading {
   text-align: center;
   color: var(--green);
@@ -483,7 +492,7 @@ header .icons #menu-bars {
   color: var(--light-color);
 }
 
-.order form {
+.order form, .login form {
   max-width: 90rem;
   border-radius: .5rem;
   box-shadow: var(--box-shadow);
@@ -493,17 +502,17 @@ header .icons #menu-bars {
   margin: 0 auto;
 }
 
-.order form .inputBox {
+.order form .inputBox, .login form .inputBox {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.order form .inputBox .input {
+.order form .inputBox .input, .login form .input {
   width: 49%;
 }
 
-.order form .inputBox .input span {
+.order form .inputBox .input span, .login form .input span {
   display: block;
   padding: .5rem 0;
   font-size: 1.5rem;
@@ -511,7 +520,9 @@ header .icons #menu-bars {
 }
 
 .order form .inputBox .input input,
-.order form .inputBox .input textarea {
+.order form .inputBox .input textarea,
+.login form .input input,
+.login form .input textarea {
   background: #eee;
   border-radius: .5rem;
   padding: 1rem;
@@ -523,16 +534,18 @@ header .icons #menu-bars {
 }
 
 .order form .inputBox .input input:focus,
-.order form .inputBox .input textarea:focus {
+.order form .inputBox .input textarea:focus,
+.login form .input input:focus {
   border: .1rem solid var(--green);
 }
 
-.order form .inputBox .input textarea {
+.order form .inputBox .input textarea,
+.login form .input textarea {
   height: 20rem;
   resize: none;
 }
 
-.order form .btn {
+.order form .btn, .login form .btn {
   margin-top: 0;
 }
 
@@ -548,14 +561,16 @@ header .icons #menu-bars {
   color: var(--black);
 }
 
-.footer .box-container .box a {
+.footer .box-container .box a,
+.login form a {
   display: block;
   padding: .5rem 0;
   font-size: 1.5rem;
   color: var(--light-color);
 }
 
-.footer .box-container .box a:hover {
+.footer .box-container .box a:hover,
+.login form a:hover {
   color: var(--green);
   text-decoration: underline;
 }
@@ -574,7 +589,9 @@ header .icons #menu-bars {
   color: var(--green);
 }
 
-
+.login form a{
+  width: fit-content;
+}
 
 
 
@@ -655,7 +672,18 @@ header .icons #menu-bars {
     height: auto;
     width: 100%;
   }
-  .order form .inputBox .input {
+  .order form .inputBox .input, .login form .input {
     width: 100%;
   }
+}
+
+.login form a {
+  display: block;
+  padding: .5rem 0;
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+
+.login form a:hover {
+  color: rgb(0, 193, 223);
 }
